@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5//EN"
+    "http://www.w3.org/TR/html5/html5.dtd"
+    >
+<html lang="en">
+<head>
+    <title>Ben's Blog</title>
+    <link href="two.css" type="text/css" rel="stylesheet" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#header ul li").hover(function () {
+                $(this).addClass("hovered");
+            }, function () {
+                $(this).removeClass("hovered");
+            });
+        });
+    </script>
+</head>
+<body>
+    
+    <div id="container">
+        <div id="header">
+            <h1>Welcome to Ben's Blog!</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Latest Posts</a></li>
+                <li><a href="#">Links</a></li>
+                <li><a href="#">Pictures of Dolphins</a></li>
+            </ul>
+        </div>
+        
+        <div id="lower-container">
+            <div id="sidebar">
+                <ul>
+                    <li><a href="#">Why Vista Sucks</a></li>
+                    <li><a href="#">My New iMac</a></li>
+                    <li><a href="#">Ubuntu is for hackers</a></li>
+                    <li><a href="#">Best BitTorrent Clients</a></li>
+                    <li><a href="#">Top 5 Songs by The Strokes</a></li>
+                    <li><a href="#">Best Shared Hosting</a></li>
+                </ul>
+            </div>
+            <div id="central-container">
+                <div class="article-header">
+                    <h2>Why Vista Sucks</h2>
+                    <h3>By Ben Stephenson</h3>
+                </div>
+                
+                <div class="article-body">
+                    <p>Security researchers Alexander Sotirov and Mark Dowd have developed a technique that bypasses many of the new memory-protection safeguards in Windows Vista, such as address space layout randomization (ASLR). The result of this is that any already existing buffer overflow bugs that, in Vista, were previously not exploitable due to such features, may now be exploitable.[9][10] This is not in itself a vulnerability: as Sotirov notes, "What we presented is weaknesses in the protection mechanism. It still requires the system under attack to have a vulnerability. Without the presence of a vulnerability these techniques don’t really [accomplish] anything."[11] The vulnerability Sotirov and Dowd used in their paper as an example was the 2007 animated cursor bug, CVE-2007-0038.</p>
+<p>Microsoft engineer Jerry Markell noted upon the overall coding of the memory protection features lacked the necessary features for a decent run. Markell noted in his journal after taking a look at the issues that the code was "dangerously lacking, and, overall, pretty screwy." Markell submitted his complaints to one of his bosses later and received no message in return.[citation needed]</p>
+<p>>One security researcher (Dino Dai Zovi) claimed that this means that it is "completely game over" for Vista security.[12] though Sotirov refuted this, saying that "The articles that describe Vista security as 'broken' or 'done for,' with 'unfixable vulnerabilities' are completely inaccurate. One of the suggestions I saw in many of the discussions was that people should just use Windows XP. In fact, in XP a lot of those protections we’re bypassing [such as ASLR] don’t even exist."[11]</p>
+                </div>
+            </div>
+            <div id="image-reel">
+                <img src="dolphins/dolphin1.jpg" />
+                <img src="dolphins/dolphin2.jpg" />
+                <img src="dolphins/dolphin3.jpg" />
+                <img src="dolphins/dolphin4.jpg" />
+            </div>
+            
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+</body>
+</html>

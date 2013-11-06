@@ -1,0 +1,95 @@
+<html>
+<title size="big">Blog Page</title>
+<script type="text/javascript">
+    window.onload = function () {
+        for ( var i in document.getElementsByTagName("a") ) {
+            document.getElementsByTagName("a")[i].style.color = "red";
+        }
+    };
+    
+    function mypony(name) {
+        alert("This is my "+name+" pony");
+    }
+</script>
+<body>
+    <font face="verdana" color="grey">
+        
+        <table width="100%">
+            <tr height="60px"></tr>
+            <tr>
+                <td align="center" colspan="100%">
+                    <font size="20px">Welcome to Ben's Blog!</font>
+                </td>
+            </tr>
+            <tr height="20px"></tr>
+            <tr height="40px" bgcolor="lightgrey">
+                <td width="20%" align="center"><a href="#">Home</a></td>
+                <td width="20%" align="center"><a href="#">Latest Posts</a></td>
+                <td width="20%" align="center"><a href="#">Links</a></td>
+                <td width="20%" align="center"><a href="#">Pictures of Ponies</a></td>
+            </tr>
+            <tr height="20px"></tr>
+            <tr>
+                <td valign="top">
+                    <table width="100%" cellpadding="10px">
+                        <tr>
+                            <td>- <a href="#">Why Micro$oft $ucks</a></td>
+                        </tr>
+                        <tr>
+                            <td>- <a href="#">MY NEW MACBOOK PRO!</a></td>
+                        </tr>
+                        <tr>
+                            <td>- <a href="#">Android is for g33ks</a></td>
+                        </tr>
+                        <tr>
+                            <td>- <a href="#">Best Supermario ROMS</a></td>
+                        </tr>
+                        <tr>
+                            <td>- <a href="#">Top 5 Pokemon</a></td>
+                        </tr>
+                        <tr>
+                            <td>- <a href="#">Geocities vs Homestead</a></td>
+                        </tr>
+                    </table>
+                </td>
+                <td colspan="2" valign="top">
+                    <table width="100%">
+                        <tr valign="top" height="50px">
+                            <td>
+                                <h4 style="margin-bottom: 0px">Why Micro$oft $ucks</h4><br>
+                                <h5 style="margin-top: 0px;">By Ben "1337" Stephenson</h5><hr>
+                            </td>
+                        </tr>
+                        <tr height="20px"></tr>
+                        <tr>
+                            <td>
+                                I hate Microsoft Word. I want Microsoft Word to die. I hate Microsoft Word with a burning, fiery passion. I hate Microsoft Word the way Winston Smith hated Big Brother. Our reasons are, alarmingly, not dissimilar ...<br>
+<br>
+Microsoft Word is a tyrant of the imagination, a petty, unimaginative, inconsistent dictator that is ill-suited to any creative writer's use. Worse: it is a near-monopolist, dominating the word processing field. Its pervasive near-monopoly status has brainwashed software developers to such an extent that few can imagine a word processing tool that exists as anything other than as a shallow imitation of the Redmond Behemoth. But what exactly is wrong with it?<br>
+<br>
+I've been using word processors and text editors for nearly 30 years. There was an era before Microsoft Word's dominance when a variety of radically different paradigms for text preparation and formatting competed in an open marketplace of ideas. One early and particularly effective combination was the idea of a text file, containing embedded commands or macros, that could be edited with a programmer's text editor (such as ed or teco or, later, vi or emacs) and subsequently fed to a variety of tools: offline spelling checkers, grammar checkers, and formatters like scribe, troff, and latex that produced a binary page image that could be downloaded to a printer.<br>
+<br>
+These tools were fast, powerful, elegant, and extremely demanding of the user. As the first 8-bit personal computers appeared (largely consisting of the Apple II and the rival CP/M ecosystem), programmers tried to develop a hybrid tool called a word processor: a screen-oriented editor that hid the complex and hostile printer control commands from the author, replacing them with visible highlight characters on screen and revealing them only when the user told the program to "reveal codes". Programs like WordStar led the way, until WordPerfect took the market in the early 1980s by adding the ability to edit two or more files at the same time in a split screen view.<br>
+
+                        </tr>
+                    </table>
+                </td>
+                <td valign="top" align="center">
+                    <img width="200px" onclick="mypony('first')" height="200px" src="ponies/ponies1.jpg"><br>
+                    <br>
+                    <img width="200px" onclick="mypony('second')" height="200px" src="ponies/ponies2.jpg"><br>
+                    <br>
+                    <img width="200px" onclick="mypony('third')" height="200px" src="ponies/ponies3.jpg"><br>
+                    <br>
+                    <img width="200px" onclick="mypony('fourth')" height="200px" src="ponies/ponies4.jpg"><br>
+                    <br>
+                    <img width="200px" onclick="mypony('fifth')" height="200px" src="ponies/ponies5.jpg"><br>
+                </td>
+            </tr>
+        </table>    
+    </font>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+</body>
+</html>

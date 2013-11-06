@@ -1,0 +1,156 @@
+/*
+ * Imports
+ */
+@import "reset.less";
+
+
+/*
+ * Sexy Global Vars
+ */
+@background: #00aed2;
+@fontColor: #fff;
+@fontFamily: Verdana, sans-serif;
+@center: 50% 50%;
+@defaultPostImg: "three/redhat.jpeg";
+
+/*
+ * Here are your bloody styles.
+ */
+
+body {
+    background: @background;
+    color: @fontColor;
+    font-family: @fontFamily;
+    
+    h1 {
+        font-size: 1.2em;
+    }
+}
+#container {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+#main-header {
+    margin-bottom: 20px;
+    
+    #logo {
+       letter-spacing: -.1em;
+       font-size: 2em;
+       text-transform: uppercase;
+       font-weight: bold;
+    }
+
+    nav {
+        margin-top: 20px;
+        ul {
+            list-style-type: none;
+            background: #009ec3;
+            li {
+                padding: 20px 10px;
+                display: inline-block;    
+                a {
+                    color: fade(@fontColor, 50%);
+                    text-decoration: none;
+                }
+            }
+            li.selected {           
+                background: #0086a6;
+                a {
+                    color: @fontColor;
+                }
+            }
+            li:hover {
+                a {
+                    color: @fontColor;
+                    -webkit-transition: color .5s;
+                }
+            }
+        }
+    }
+}
+
+nav#recentposts {
+    
+    margin-top: 15px;
+    
+    ul {
+        list-style-type: none;
+        
+        li {
+            display: inline-block;
+            width: 259px;
+            height: 130px;
+            position: relative;
+            margin-right: 3 0px;
+            opacity: .6;
+            margin-bottom: 30px;
+            label {
+                background: #000;
+                opacity: .8;
+                display: block;
+                position: absolute;
+                bottom: 0px;
+                width: 239px;
+                padding: 10px 10px;
+            }
+        }
+        li:hover {
+            opacity: 1;
+            -webkit-transition: opacity 1s;
+            cursor: pointer;
+        }
+        
+        li#apple {
+            background: url(three/apple.jpg) @center;
+        }
+        li#nexus {
+            background: url(three/nexus.jpg) @center;
+        }
+        li#redhat {
+            background: url(three/redhat.jpeg) @center;
+        }
+        li#usenet {
+            background: url("@{defaultPostImg}") @center;
+        }
+        li#aws {
+            background: url("@{defaultPostImg}") @center;
+        }
+        
+    }
+}
+
+#main-content {
+    margin-top: 15px;
+    
+    article {
+        header {
+            text-align: center;
+            h2 {
+                font-size: 2.5em;
+                font-style: italic;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-size: .8em;
+                
+            }
+        }
+        section {
+            
+            background: #fff;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            margin-top: 20px;
+            padding: 20px;
+            
+            p {
+                padding: 10px 20px;
+                color: #333;
+                font-size: .8em;
+                line-height: 1.5em;
+            }
+            
+        }
+    }
+}
